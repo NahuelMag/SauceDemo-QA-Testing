@@ -30,7 +30,7 @@ Durante este ciclo de pruebas se evaluaron los siguientes módulos del sistema:
 Aplicación: SauceDemo  
 Tipo de aplicación: Web  
 Navegador utilizado: Google Chrome  
-Sistema Operativo: Windows 10  
+Sistema Operativo: Windows 11  
 
 ---
 
@@ -41,7 +41,7 @@ Total de casos de prueba ejecutados: **15**
 | Resultado | Cantidad |
 |-----------|----------|
 | Passed    | 11       |
-| Failed    | 4        |
+| Failed    | 3        |
 | Blocked   | 0        |
 
 ---
@@ -77,7 +77,6 @@ Durante la ejecución de pruebas se detectaron los siguientes defectos:
 | BUG-01 | Ordenamiento incorrecto de productos por precio | Medium |
 | BUG-02 | El sistema permite caracteres especiales en el campo First Name | Medium |
 | BUG-03 | El sistema permite iniciar checkout con carrito vacío | High |
-| BUG-04 | Imágenes incorrectas de productos con usuario problem_user | Medium |
 
 Los defectos fueron registrados y gestionados mediante Jira.
 
@@ -109,3 +108,10 @@ Se recomienda corregir los defectos reportados antes de una liberación en produ
 - Test Cases Documentation
 - Bug Reports (Jira)
 - Evidencias de ejecución de pruebas
+
+---
+
+## Author
+
+Nahuel Magnano  
+QA Tester
