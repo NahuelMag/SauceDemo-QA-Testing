@@ -1,0 +1,75 @@
+1. Objetivo
+
+El objetivo de este análisis es identificar los riesgos potenciales que podrían afectar el correcto funcionamiento del sistema, la experiencia del usuario y la lógica de negocio dentro de la aplicación de e-commerce.
+
+Este análisis permite priorizar las pruebas sobre las funcionalidades más críticas del sistema.
+
+2. Áreas críticas del sistema
+
+Durante el análisis funcional de la aplicación se identificaron los siguientes módulos como críticos para el negocio:
+
+Autenticación de usuarios (Login)
+
+Visualización del catálogo de productos
+
+Carrito de compras
+
+Proceso de checkout
+
+Confirmación de compra
+
+Estas funcionalidades representan el flujo principal de compra dentro del sistema.
+
+3. Identificacion de riesgos
+
+| ID | Riesgo                                                          | Impacto | Probabilidad | Nivel de riesgo |
+| -- | --------------------------------------------------------------- | ------- | ------------ | --------------- |
+| R1 | Fallos en el proceso de login que impidan el acceso de usuarios | Alto    | Medio        | Alto            |
+| R2 | Visualización incorrecta de productos (imágenes o precios)      | Medio   | Medio        | Medio           |
+| R3 | Problemas al agregar o eliminar productos del carrito           | Alto    | Medio        | Alto            |
+| R4 | Fallos en validaciones del formulario de checkout               | Alto    | Alto         | Crítico         |
+| R5 | Posibilidad de iniciar checkout con carrito vacío               | Alto    | Medio        | Alto            |
+| R6 | Orden incorrecto de productos al aplicar filtros                | Bajo    | Medio        | Bajo            |
+| R7 | Problemas de rendimiento al cargar el catálogo de productos     | Medio   | Bajo         | Medio           |
+
+4. Riesgos más críticos
+
+Los riesgos más relevantes identificados fueron:
+
+🔴 Validaciones insuficientes en checkout
+
+Si el sistema permite datos inválidos o incompletos, puede generar:
+
+errores en pedidos
+
+inconsistencias en el sistema
+
+mala experiencia de usuario
+
+🔴 Problemas en el carrito de compras
+
+El carrito es un componente central del flujo de compra. Cualquier fallo puede impedir que el usuario complete una compra.
+
+🔴 Inicio de checkout con carrito vacío
+
+Esto representa una inconsistencia en la lógica del negocio, ya que el usuario debería tener al menos un producto antes de iniciar el proceso de compra.
+
+5. Estrategia de mitigación
+
+Para reducir los riesgos identificados se definieron las siguientes acciones de testing:
+
+Priorizar pruebas en el flujo completo de compra.
+
+Validar exhaustivamente los formularios de checkout.
+
+Verificar consistencia del carrito de compras.
+
+Ejecutar pruebas negativas en campos de entrada.
+
+Validar comportamiento ante datos inválidos o incompletos.
+
+6. Conclusión
+
+El análisis de riesgos permitió identificar los componentes más sensibles del sistema y orientar los esfuerzos de testing hacia aquellas áreas con mayor impacto potencial en el negocio.
+
+La ejecución de pruebas sobre estos módulos es fundamental para asegurar la estabilidad del sistema y una experiencia de usuario satisfactoria.
