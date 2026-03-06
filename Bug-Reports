@@ -1,0 +1,11 @@
+## Bug Tracking
+
+Los defectos identificados durante las pruebas fueron registrados y gestionados utilizando Jira.
+
+Se reportaron un total de 4 bugs relacionados con:
+
+- Ordenamiento incorrecto de productos por precio
+- El sistema permite caracteres especiales en el campo First Name
+- El sistema permite iniciar checkout con carrito vacío
+
+Link : https://nahuelmag.atlassian.net/jira/software/projects/SQT/list?jql=project+%3D+SQT+ORDER+BY+summary+DESC%2C+created+DESC&atlOrigin=eyJpIjoiMGIwNTUzZTU4ZmQ1NGZmMmEyNWE1NDNjMTQ3ZmE4Y2EiLCJwIjoiaiJ9
